@@ -127,7 +127,7 @@ D:/flo/
 
 ### config.json
 
-Example configuration (for FLOCard Pool):
+Example configuration (for FLOCard Pool):  
 **Note: Use the correct path for cgminer.exe, cgminer.conf, and minerd.exe according to your computer directory
 
 ```json
