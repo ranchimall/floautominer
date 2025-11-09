@@ -128,6 +128,7 @@ D:/flo/
 ### config.json
 
 Example configuration (for FLOCard Pool):
+**Note: Use the correct path for cgminer.exe, cgminer.conf, and minerd.exe according to your computer directory
 
 ```json
 {
@@ -156,6 +157,8 @@ Example configuration (for FLOCard Pool):
   "STABILITY_WINDOW_SIZE": 20,
   "STABILITY_REQUIRED_IN_RANGE": 17,
   "STABILITY_REQUIRED_PASSES": 3,
+  "FAST_BLOCK_LIMIT": 20,
+  "FAST_BLOCK_DURATION": 600,
 
   "GPU_MINER_EXECUTABLE": "D:/flo/gpu miner/cgminer.exe",
   "GPU_MINER_CONFIG": "D:/flo/gpu miner/cgminer.conf",
@@ -196,6 +199,32 @@ Example configuration (for FLOCard Pool):
 | `MINER_USER`                           | Your FLO wallet address + worker name       |
 | `MINER_PASS`                           | Pool password (usually “x”)                 |
 
+| Key                                    | Description                                                                                                                                         |
+| -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `BLOCKBOOK_API`                        | Endpoint for latest FLO block                                                                                                                       |
+| `BLOCKBOOK_INDEX_API`                  | Endpoint for block hash lookup by height                                                                                                            |
+| `BLOCKBOOK_BLOCK_API`                  | Endpoint for detailed block data                                                                                                                    |
+| `TARGET_BLOCK_INTERVAL`                | Ideal block interval (seconds)                                                                                                                      |
+| `LOWER_INTERVAL` / `UPPER_INTERVAL`    | Acceptable timing bounds                                                                                                                            |
+| `MAX_RUNTIME_MINUTES`                  | Stops mining after this time                                                                                                                        |
+| `MIN_INTENSITY` / `MAX_INTENSITY`      | GPU intensity range                                                                                                                                 |
+| `NO_BLOCK_TIMEOUT`                     | Wait time before retrying higher intensity                                                                                                          |
+| `FAST_BLOCK_LIMIT`                     | Maximum number of **consecutive fast blocks** to determine stable state and stop mining                                                             |
+| `FAST_BLOCK_DURATION`                  | Maximum **continuous time in seconds** to determine stable state and stop mining                                                                    |
+| `AUTO_APPLY`                           | Automatically apply new settings                                                                                                                    |
+| `COOLDOWN_BLOCKS` / `COOLDOWN_SECONDS` | Cooldown logic between changes                                                                                                                      |
+| `STABILITY_WINDOW_SIZE`                | Number of blocks in each stability window                                                                                                           |
+| `STABILITY_REQUIRED_IN_RANGE`          | Blocks that must be within range per window                                                                                                         |
+| `STABILITY_REQUIRED_PASSES`            | Number of consecutive windows required                                                                                                              |
+| `GPU_MINER_EXECUTABLE`                 | Path to cgminer.exe                                                                                                                                 |
+| `GPU_MINER_CONFIG`                     | Path to cgminer.conf                                                                                                                                |
+| `CPU_MINER_EXECUTABLE`                 | Path to minerd.exe                                                                                                                                  |
+| `CPU_MINER_THREADS_START`              | Number of CPU threads to start with                                                                                                                 |
+| `MINER_POOL_URL`                       | FLOCard pool stratum URL                                                                                                                            |
+| `MINER_USER`                           | Your FLO wallet address + worker name                                                                                                               |
+| `MINER_PASS`                           | Pool password (usually “x”)                                                                                                                         |
+
+
 ---
 
 ### cgminer.conf (Optional GPU Settings)
@@ -223,7 +252,7 @@ You can use this sample configuration:
 
 * These are GPU tuning settings, not pool details.
 * Pool credentials come from `config.json` (the controller passes them dynamically).
-* Adjust `gpu-engine`, `gpu-memclock`, and fan speeds as appropriate for your GPU.
+* Adjust `gpu-engine`, `gpu-memclock`, fan speeds, and others in this file as appropriate for your GPU.
 
 ---
 
