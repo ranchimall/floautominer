@@ -128,7 +128,8 @@ D:/flo/
 ### config.json
 
 Example configuration (for FLOCard Pool):  
-**Note: Use the correct path for cgminer.exe, cgminer.conf, and minerd.exe according to your computer directory
+**Note: Use the correct path for cgminer.exe, cgminer.conf, and minerd.exe according to your computer directory  
+You can modify the time placeholder values such as (TARGET_BLOCK_INTERVAL, LOWER_INTERVAL, UPPER_INTERVAL, MAX_RUNTIME_MINUTES, COOLDOWN_SECONDS, etc.) for different testing logic but do not change the API values, Miner Pool URL unless you have a different URL with its stratum url.
 
 ```json
 {
