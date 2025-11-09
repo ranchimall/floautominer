@@ -37,9 +37,10 @@ D:/flo/
 │
 ├── floautominer.py.py                # main controller script
 ├── config.json                       # configuration file
-├── cgminer.conf                      # optional GPU tuning
+                            
 ├── gpu miner/
 │     └── cgminer.exe
+│     └── cgminer.conf                # optional GPU tuning
 └── cpuminer minerd/
       └── minerd.exe
 
@@ -163,7 +164,7 @@ Example configuration (for FLOCard Pool):
   "CPU_MINER_THREADS_START": 3,
 
   "MINER_POOL_URL": "stratum+tcp://pool.flocard.app:3052",
-  "MINER_USER": "FQ8zdiakBJHx8g4FKfU5o6LRgNwgXTC5RK.worker1",
+  "MINER_USER": "<<Your_FLO_Address>>.worker1",
   "MINER_PASS": "x"
 }
 ````
