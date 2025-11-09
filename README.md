@@ -238,7 +238,7 @@ You can use this sample configuration:
 3. Run the script:
 
    ```bash
-   python gpu_cpu_blockbook_combined.py
+   python flo_auto_miner.py
    ```
 
 Example output:
@@ -279,6 +279,45 @@ If you wish, you can replace this with any other active FLO-compatible pool in `
 If no new blocks appear for 600 seconds, the intensity increases automatically.
 
 ---
+
+### Example Output
+
+When the controller finishes or is stopped manually, it prints a detailed session summary like this:
+
+```
+Session Performance Summary
+─────────────────────────────────────────────
+Total Duration: 0h 25m 59s
+Average Hashrate: 71.53 KH/s
+Maximum Power Mode: GPU 10 → Avg 255.00 KH/s
+Minimum Power Mode: CPU 2 → Avg 36.21 KH/s
+Most Used Intensity: 10
+Average Temperature: 23.7°C
+Total Accepted Shares: 2185
+Total Rejected Shares: 0
+Average Block Interval: 36.16s
+─────────────────────────────────────────────
+Mining session ended successfully.
+```
+
+#### Explanation
+
+| Field                      | Description                                                     |
+| -------------------------- | --------------------------------------------------------------- |
+| **Total Duration**         | Total time the controller was active during the session.        |
+| **Average Hashrate**       | The overall average hashrate recorded (GPU or CPU).             |
+| **Maximum Power Mode**     | The highest GPU or CPU setting used, with its average hashrate. |
+| **Minimum Power Mode**     | The lowest GPU or CPU setting used, with its average hashrate.  |
+| **Most Used Intensity**    | The GPU intensity that was used most frequently.                |
+| **Average Temperature**    | The mean GPU temperature across the session.                    |
+| **Total Accepted Shares**  | The number of valid shares accepted by the mining pool.         |
+| **Total Rejected Shares**  | The number of invalid or rejected shares (ideally zero).        |
+| **Average Block Interval** | The average time between mined blocks during the run.           |
+
+This summary helps users understand how their system performed and how effectively it contributed to stabilizing FLO network block times.
+
+---
+
 
 ## Auto Miner Purpose
 
