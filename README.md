@@ -35,13 +35,13 @@ When block intervals return to normal, it stops mining to conserve system resour
 
 D:/flo/
 │
-├── floautominer.py.py                # main controller script
+├── floautominer.py.                  # main controller script
 ├── config.json                       # configuration file
                             
-├── gpu miner/
+├── gpuminer/
 │     └── cgminer.exe
 │     └── cgminer.conf                # optional GPU tuning
-└── cpuminer minerd/
+└── cpuminer/
       └── minerd.exe
 
 ```
