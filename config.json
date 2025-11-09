@@ -25,6 +25,8 @@
   "STABILITY_REQUIRED_IN_RANGE": 17,
   "STABILITY_REQUIRED_PASSES": 3,
 
+  "FAST_BLOCK_LIMIT": 20,
+  "FAST_BLOCK_DURATION": 600,
 
   "GPU_MINER_EXECUTABLE": "<PATH_TO_cgminer.exe>",
   "GPU_MINER_CONFIG": "<PATH_TO_cgminer.conf>",
@@ -37,4 +39,5 @@
   "MINER_PASS": "x"
   
 }
+
 
