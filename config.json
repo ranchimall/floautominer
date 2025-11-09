@@ -26,14 +26,15 @@
   "STABILITY_REQUIRED_PASSES": 3,
 
 
-  "GPU_MINER_EXECUTABLE": "D:/flo/gpu miner/cgminer.exe",
-  "GPU_MINER_CONFIG": "D:/flo/gpu miner/cgminer.conf",
+  "GPU_MINER_EXECUTABLE": "<PATH_TO_cgminer.exe>",
+  "GPU_MINER_CONFIG": "<PATH_TO_cgminer.conf>",
   
-  "CPU_MINER_EXECUTABLE": "D:/flo/cpuminer minerd/minerd.exe",
+  "CPU_MINER_EXECUTABLE": "<PATH_TO_minerd.exe>",
   "CPU_MINER_THREADS_START": 3,
   
   "MINER_POOL_URL": "stratum+tcp://pool.flocard.app:3052",
-  "MINER_USER": "FQ8zdiakBJHx8g4FKfU5o6LRgNwgXTC5RK.worker1",
+  "MINER_USER": "<<Your_FLO_Address>>.worker1",
   "MINER_PASS": "x"
   
 }
+
