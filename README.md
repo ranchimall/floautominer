@@ -177,28 +177,6 @@ You can modify the time placeholder values such as (TARGET_BLOCK_INTERVAL, LOWER
 
 ### Configuration Explanation
 
-| Key                                    | Description                                 |
-| -------------------------------------- | ------------------------------------------- |
-| `BLOCKBOOK_API`                        | Endpoint for latest FLO block               |
-| `BLOCKBOOK_INDEX_API`                  | Endpoint for block hash lookup by height    |
-| `BLOCKBOOK_BLOCK_API`                  | Endpoint for detailed block data            |
-| `TARGET_BLOCK_INTERVAL`                | Ideal block interval (seconds)              |
-| `LOWER_INTERVAL` / `UPPER_INTERVAL`    | Acceptable timing bounds                    |
-| `MAX_RUNTIME_MINUTES`                  | Stops mining after this time                |
-| `MIN_INTENSITY` / `MAX_INTENSITY`      | GPU intensity range                         |
-| `NO_BLOCK_TIMEOUT`                     | Wait time before retrying higher intensity  |
-| `AUTO_APPLY`                           | Automatically apply new settings            |
-| `COOLDOWN_BLOCKS` / `COOLDOWN_SECONDS` | Cooldown logic between changes              |
-| `STABILITY_WINDOW_SIZE`                | Number of blocks in each stability window   |
-| `STABILITY_REQUIRED_IN_RANGE`          | Blocks that must be within range per window |
-| `STABILITY_REQUIRED_PASSES`            | Number of consecutive windows required      |
-| `GPU_MINER_EXECUTABLE`                 | Path to cgminer.exe                         |
-| `GPU_MINER_CONFIG`                     | Path to cgminer.conf                        |
-| `CPU_MINER_EXECUTABLE`                 | Path to minerd.exe                          |
-| `CPU_MINER_THREADS_START`              | Number of CPU threads to start with         |
-| `MINER_POOL_URL`                       | FLOCard pool stratum URL                    |
-| `MINER_USER`                           | Your FLO wallet address + worker name       |
-| `MINER_PASS`                           | Pool password (usually “x”)                 |
 
 | Key                                    | Description                                                                                                                                         |
 | -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
