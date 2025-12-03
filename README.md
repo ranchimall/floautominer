@@ -106,7 +106,7 @@ D:/flo/cpuminer minerd/minerd.exe
 
 Download the following files from this repository:
 
-- [gpu_cpu_blockbook_combined.py](https://github.com/ranchimall/floautominer/blob/main/flo_auto_miner.py)
+- [flo_auto_miner.py](https://github.com/ranchimall/floautominer/blob/main/flo_auto_miner.py)
 - [config.json](https://github.com/ranchimall/floautominer/blob/main/config.json)
 - [cgminer.conf](https://github.com/ranchimall/floautominer/blob/main/cgminer.conf)
 
